@@ -13,6 +13,8 @@
     (printf "1: ~a\n" (ins_beg 1 '(2 3 4)))
     (printf "2: ~a\n" (ins_beg "a" '("b" "c" "d")))
     (printf "3: ~a\n" (ins_beg 1 '("bc" 3 "de")))
+    (printf "4: ~a\n" (ins_end 4 '(1 2 3)))
+    (printf "5: ~a\n" (ins_end 'a '(b c d)))
     ; End calling test functions
     (display "\nTests complete!\n")))
 
