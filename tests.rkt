@@ -14,7 +14,11 @@
     (printf "2: ~a\n" (ins_beg "a" '("b" "c" "d")))
     (printf "3: ~a\n" (ins_beg 1 '("bc" 3 "de")))
     (printf "4: ~a\n" (ins_end 4 '(1 2 3)))
-    (printf "5: ~a\n" (ins_end 'a '(b c d)))
+    (printf "5: ~a\n" (ins_end 'd '(a b c)))
+    (printf "6: ~a\n" (ins_end 3 '("1" 2)))
+    (printf "7: ") (cout_top_level '("a" '("b" "c" "d") "c"))
+    (printf "\n8: ") (cout_top_level '("hello" ("my" "name" "is")))
+    (printf "\n9: ") (cout_top_level '(1 2 (3 4) 5 6)) 
     ; End calling test functions
     (display "\nTests complete!\n")))
 

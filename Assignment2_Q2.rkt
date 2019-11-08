@@ -11,3 +11,17 @@
 (define (ins_end el lst)
   (append lst el)
   )
+
+(provide cout_top_level)
+
+(define (cout_top_level lst)
+  (define el 0)
+  (define (count symbol)
+    (if (empty? symbol)
+        (display "Items in the list = ")
+        (begin
+          (set! el (+ el 1))
+          (count (rest symbol)))))
+  (count lst)
+  (display el)
+  )
