@@ -18,7 +18,16 @@
     (printf "6: ~a\n" (ins_end 3 '("1" 2)))
     (printf "7: ") (cout_top_level '("a" '("b" "c" "d") "c"))
     (printf "\n8: ") (cout_top_level '("hello" ("my" "name" "is")))
-    (printf "\n9: ") (cout_top_level '(1 2 (3 4) 5 6)) 
+    (printf "\n9: ") (cout_top_level '(1 2 (3 4) 5 6))
+    (printf "\n10: ") (count_instances "a" '("a" "b" "c" "d" "a" "b" "c" "a"))
+    (printf "\n11: ") (count_instances 2 '(2 2 2 2 2 2 3 2 2 1 2 4 6 8))
+    (printf "\n12: ") (count_instances "hi" '(2 4 1 "hi" "bye" "hi" 4))
+    (printf "\n13: ") (count_instances_tr "a" '("a" "b" "c" "d" "a" "b" "c" "a"))
+    (printf "\n14: ") (count_instances_tr 2 '(2 2 2 2 2 2 3 2 2 1 2 4 6 8))
+    (printf "\n15: ") (count_instances_tr "hi" '(2 4 1 "hi" "bye" "hi" 4))
+    (printf "\n16: ") (count_instances_deep 3 '(1 2 3 (1 3 4) 3))
+    (printf "\n17: ") (count_instances_deep "a" '(1 2 3 (1 3 4) 3))
+    (printf "\n18: ") (count_instances_deep "a" '(1 "a" "a" ("a" 3 4) 3 ("a")))
     ; End calling test functions
     (display "\nTests complete!\n")))
 
